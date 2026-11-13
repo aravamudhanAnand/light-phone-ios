@@ -1,6 +1,6 @@
 # Light Phone mode — iPhone setup
 
-Allowed tools: Phone · Messages · WhatsApp · Spotify · Maps · Alarm · Wealthsimple · Camera · Wallet
+Allowed tools: Phone · WhatsApp · Spotify · Maps · Tesla · Wealthsimple · Yahoo Finance · Camera · Wallet
 
 ## Files
 
@@ -19,26 +19,29 @@ rename (top of the screen) → Done. The name must match **exactly**.
 
 | Shortcut name     | Open App → |
 |-------------------|------------|
-| `LP Phone`        | Phone |
-| `LP Messages`     | Messages |
-| `LP WhatsApp`     | WhatsApp |
-| `LP Spotify`      | Spotify |
-| `LP Maps`         | Maps (or Google Maps) |
-| `LP Alarm`        | Clock |
-| `LP Wealthsimple` | Wealthsimple |
-| `LP Camera`       | Camera |
-| `LP Wallet`       | Wallet |
+| `LP Phone`         | Phone |
+| `LP WhatsApp`      | WhatsApp |
+| `LP Spotify`       | Spotify |
+| `LP Maps`          | Maps (or Google Maps) |
+| `LP Tesla`         | Tesla |
+| `LP Wealthsimple`  | Wealthsimple |
+| `LP Yahoo Finance` | Yahoo Finance |
+| `LP Camera`        | Camera |
+| `LP Wallet`        | Wallet |
 
 Turn each one's **Show in Share Sheet** off and **Pin to Search** off so they stay out of
 your way (shortcut details → the (i) tab).
 
 To kill the Shortcuts flash on a row once you've confirmed its native scheme works:
 set `FORCE_SHORTCUTS = false` at the top of `widget/LightPhone.js`. Rows with a scheme listed
-then launch instantly; Wealthsimple and Camera keep using Shortcuts either way.
+then launch instantly; Tesla, Wealthsimple, Yahoo Finance and Camera keep using
+Shortcuts either way — none of them has a documented scheme.
 
 ## 2. The screen
 1. Install **Scriptable** (free, App Store).
-2. Scriptable → **+** → paste `widget/LightPhone.js` → name it `Light Phone`.
+2. Scriptable → **+** → paste the *contents* of `widget/LightPhone.js` → name it `Light Phone`.
+   On the phone, use GitHub's **copy-raw** button (two overlapping squares, in the file toolbar)
+   or the raw URL. Pasting the *link* gives a `SyntaxError` — Scriptable runs whatever is in the editor.
 3. Set `assets/wallpapers/wallpaper-light.png` as wallpaper (Photos → share → Use as Wallpaper). Turn **off** Depth Effect and all Lock Screen widgets.
 4. Make a new Home Screen page. Long-press → widget **+** → Scriptable → **Large** → choose script `Light Phone`, "When Interacting: Run Script" off.
 5. Remove every icon from that page and empty the Dock (drag icons to another page).
@@ -75,7 +78,7 @@ Trigger: Action button → Focus → Light Phone, or a Control Center / Lock Scr
 ## 5. The lock (otherwise you just swipe to App Library)
 Settings → Screen Time:
 - **Downtime** → schedule it → **Block at Downtime** on
-- **Always Allowed** → exactly: Phone, Messages, WhatsApp, Spotify, Maps, Clock, Wealthsimple, Camera, Wallet
+- **Always Allowed** → exactly: Phone, WhatsApp, Spotify, Maps, Tesla, Wealthsimple, Yahoo Finance, Camera, Wallet
 - **Content & Privacy Restrictions → Allowed Apps → Safari: off**
 - Set a **Screen Time passcode different from your device passcode**. Write it on paper. Don't memorise it.
 

@@ -20,15 +20,15 @@ const FORCE_SHORTCUTS = true;
 
 // [label, shortcut name, native scheme or null]
 const TOOLS = [
-  ["PHONE",        "LP Phone",        "mobilephone://"],
-  ["MESSAGES",     "LP Messages",     "sms://"],
-  ["WHATSAPP",     "LP WhatsApp",     "whatsapp://"],
-  ["SPOTIFY",      "LP Spotify",      "spotify://"],
-  ["MAPS",         "LP Maps",         "maps://"],   // Google: comgooglemaps://
-  ["ALARM",        "LP Alarm",        "mobiletimer://"],
-  ["WEALTHSIMPLE", "LP Wealthsimple", null],
-  ["CAMERA",       "LP Camera",       null],
-  ["WALLET",       "LP Wallet",       "shoebox://"],
+  ["PHONE",         "LP Phone",         "mobilephone://"],
+  ["WHATSAPP",      "LP WhatsApp",      "whatsapp://"],
+  ["SPOTIFY",       "LP Spotify",       "spotify://"],
+  ["MAPS",          "LP Maps",          "maps://"],   // Google: comgooglemaps://
+  ["TESLA",         "LP Tesla",         null],
+  ["WEALTHSIMPLE",  "LP Wealthsimple",  null],
+  ["YAHOO FINANCE", "LP Yahoo Finance", null],
+  ["CAMERA",        "LP Camera",        null],
+  ["WALLET",        "LP Wallet",        "shoebox://"],
 ];
 
 // ── Build ─────────────────────────────────────────────────────────────

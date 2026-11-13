@@ -51,12 +51,17 @@ Roughly fifteen minutes, most of it making shortcuts.
 
 **1. Shortcuts.** The widget routes each row through Shortcuts so it never depends on an
 undocumented URL scheme. Make nine, each one action — `Open App` → the app — named
-exactly `LP Phone`, `LP Messages`, `LP WhatsApp`, `LP Spotify`, `LP Maps`, `LP Alarm`,
-`LP Wealthsimple`, `LP Camera`, `LP Wallet`.
+exactly `LP Phone`, `LP WhatsApp`, `LP Spotify`, `LP Maps`, `LP Tesla`,
+`LP Wealthsimple`, `LP Yahoo Finance`, `LP Camera`, `LP Wallet`.
 
-**2. Widget.** Install Scriptable, add a new script, paste in
+**2. Widget.** Install Scriptable, add a new script, paste in the *contents* of
 [`widget/LightPhone.js`](widget/LightPhone.js), name it `Light Phone`. Add a **Large**
 Scriptable widget to an empty Home Screen page and point it at that script.
+
+> On the phone, open the file on GitHub and tap the **copy-raw** button in the file
+> toolbar — the two-overlapping-squares icon. Pasting the file's *link* into Scriptable
+> gives you `SyntaxError: Unexpected token`, because Scriptable tries to run the URL as
+> code.
 
 **3. Wallpaper.** Save `assets/wallpapers/wallpaper-light.png` (or `-dark`) to Photos and
 set it as your wallpaper. On a phone, open the file on GitHub and long-press the image to

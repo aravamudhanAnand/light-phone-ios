@@ -43,8 +43,8 @@ PADDING = 0.05      # tile padding, as a fraction of tile size
 SPLIT_OVER = 9      # words longer than this are broken onto two lines
 
 DEFAULT_WORDS = [
-    "PHONE", "MESSAGES", "WHATSAPP", "SPOTIFY", "MAPS",
-    "ALARM", "WEALTHSIMPLE", "CAMERA", "WALLET",
+    "PHONE", "WHATSAPP", "SPOTIFY", "MAPS", "TESLA",
+    "WEALTHSIMPLE", "YAHOO FINANCE", "CAMERA", "WALLET",
 ]
 
 
@@ -71,11 +71,20 @@ def hex_to_rgb(value: str) -> tuple[int, int, int]:
 
 
 def split_word(word: str) -> list[str]:
-    """Break an over-long word onto two balanced lines."""
+    """Break an over-long label onto two lines, at a space where there is one."""
     if len(word) <= SPLIT_OVER:
         return [word]
+    spaces = [i for i, c in enumerate(word) if c == " "]
+    if spaces:
+        i = min(spaces, key=lambda i: abs(i - len(word) / 2))
+        return [word[:i].strip(), word[i + 1:].strip()]
     mid = len(word) // 2
     return [word[:mid], word[mid:]]
+
+
+def slug(word: str) -> str:
+    """Filename stem for a label: 'YAHOO FINANCE' -> 'yahoo-finance'."""
+    return "-".join(word.lower().split())
 
 
 class Renderer:
@@ -191,7 +200,7 @@ def main() -> None:
     for variant, bg, fg in (("light", paper, ink), ("dark", ink, paper)):
         for word in words:
             r.tile(word, os.path.join(args.out, f"tiles/words-{variant}",
-                                      f"{word.lower()}.png"), bg, fg, size)
+                                      f"{slug(word)}.png"), bg, fg, size)
         Image.new("RGB", (TILE, TILE), bg).save(
             os.path.join(args.out, "tiles/blank", f"blank-{variant}.png"))
         Image.new("RGB", (ww, wh), bg).save(
