@@ -175,7 +175,9 @@ def main() -> None:
     ap.add_argument("--ink", type=hex_to_rgb, default="#141414",
                     help="e-ink text colour (default: %(default)s)")
     ap.add_argument("--wallpaper-size", default="1290x2796",
-                    help="WxH in pixels (default: %(default)s, iPhone 15/16 Pro)")
+                    help="WxH in pixels (default: %(default)s, iPhone 15/16 Pro Max). "
+                         "The fill is flat, so an exact match is rarely necessary — iOS "
+                         "scales it without visible artefacts.")
     ap.add_argument("--out", default="assets", help="output directory (default: %(default)s)")
     args = ap.parse_args()
 

@@ -12,6 +12,10 @@ schemes:
 ![The home screen, light and inverted](assets/previews/light-vs-dark.png)
 
 No jailbreak, no app to install besides [Scriptable](https://scriptable.app) (free).
+
+Built and verified on an **iPhone 16, iOS 26.6.2**. Widget tap handling and Focus
+behaviour both shift between iOS releases, so treat everything here as confirmed on that
+combination and worth re-checking on another.
 Everything here is a widget script, a set of generated images, and a configuration
 walkthrough.
 
