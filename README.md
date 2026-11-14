@@ -1,7 +1,7 @@
 # Light Phone mode for iPhone
 
 Turn an iPhone into something close to a [Light Phone II](https://www.thelightphone.com/):
-nine tools, an e-ink text list, no feed, no browser, no notifications.
+nine tools, an e-ink text list, no feed, no notifications.
 
 ![The home screen, light and inverted](assets/previews/light-vs-dark.png)
 
@@ -41,18 +41,23 @@ assets/wallpapers/          flat e-ink backgrounds, light and inverted
 assets/tiles/               word tiles + blank tiles for the icon route
 assets/previews/            the mockups above
 docs/SETUP.md               the full walkthrough: Focus, grayscale, Screen Time
+docs/URL-SCHEMES.md         how rows route, and how to find schemes for your apps
+docs/FIELD-NOTES.md         what building this on a real device turned up
 ```
 
 ---
 
 ## Install
 
-Roughly fifteen minutes, most of it making shortcuts.
+Roughly ten minutes.
 
-**1. Shortcuts.** The widget routes each row through Shortcuts so it never depends on an
-undocumented URL scheme. Make nine, each one action — `Open App` → the app — named
-exactly `LP Phone`, `LP WhatsApp`, `LP Spotify`, `LP Maps`, `LP Tesla`,
-`LP Wealthsimple`, `LP Yahoo Finance`, `LP Camera`, `LP Wallet`.
+**1. Shortcuts — only for rows that need them.** Five of the nine default rows open their
+app through a native URL scheme and need no setup at all. The other four have no known
+scheme, so make one shortcut each — a single `Open App` action — named exactly
+`LP Tesla`, `LP Wealthsimple`, `LP Yahoo Finance`, `LP Camera`.
+
+See [docs/URL-SCHEMES.md](docs/URL-SCHEMES.md) to swap in your own apps, including a
+ten-second way to test whether an app has a usable scheme.
 
 **2. Widget.** Install Scriptable, add a new script, paste in the *contents* of
 [`widget/LightPhone.js`](widget/LightPhone.js), name it `Light Phone`. Add a **Large**
@@ -81,8 +86,12 @@ can still swipe to App Library. With it, there's a real gap between impulse and 
 
 ## Make it yours
 
-Edit the `TOOLS` array at the top of `LightPhone.js` — label, shortcut name, optional
-native URL scheme:
+The nine rows that ship here are the ones I actually run. Yours will be different, and
+swapping them is a single edit — the rest of the repo follows from this array.
+
+Edit `TOOLS` at the top of `LightPhone.js` — label, shortcut name, optional native URL
+scheme. A scheme means one less app launch; `null` routes through Shortcuts instead. See
+[docs/URL-SCHEMES.md](docs/URL-SCHEMES.md) for how to find and test one:
 
 ```js
 const TOOLS = [
@@ -96,7 +105,7 @@ Two settings sit above it:
 | Setting | Options | Effect |
 |---|---|---|
 | `MODE` | `"auto"` / `"light"` / `"dark"` | `auto` follows system appearance, so the widget flips with your Focus |
-| `FORCE_SHORTCUTS` | `true` / `false` | `true` always works; `false` uses native schemes where available, which launch instantly with no Shortcuts flash |
+| `FORCE_SHORTCUTS` | `true` / `false` | `false` (default) uses a native scheme where one is defined, falling back to Shortcuts. `true` routes everything through Shortcuts — one launch slower, and inert until every shortcut exists, but immune to Apple retiring a scheme |
 
 Then regenerate the images to match:
 

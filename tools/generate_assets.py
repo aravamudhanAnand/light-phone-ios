@@ -44,7 +44,7 @@ SPLIT_OVER = 9      # words longer than this are broken onto two lines
 
 DEFAULT_WORDS = [
     "PHONE", "WHATSAPP", "SPOTIFY", "MAPS", "TESLA",
-    "WEALTHSIMPLE", "YAHOO FINANCE", "CAMERA", "WALLET",
+    "WEALTHSIMPLE", "YAHOO FINANCE", "CAMERA", "CHROME",
 ]
 
 

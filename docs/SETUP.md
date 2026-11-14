@@ -1,6 +1,6 @@
 # Light Phone mode — iPhone setup
 
-Allowed tools: Phone · WhatsApp · Spotify · Maps · Tesla · Wealthsimple · Yahoo Finance · Camera · Wallet
+Allowed tools: Phone · WhatsApp · Spotify · Maps · Tesla · Wealthsimple · Yahoo Finance · Camera · Chrome
 
 ## Files
 
@@ -27,7 +27,7 @@ rename (top of the screen) → Done. The name must match **exactly**.
 | `LP Wealthsimple`  | Wealthsimple |
 | `LP Yahoo Finance` | Yahoo Finance |
 | `LP Camera`        | Camera |
-| `LP Wallet`        | Wallet |
+| `LP Chrome`        | Chrome |
 
 Turn each one's **Show in Share Sheet** off and **Pin to Search** off so they stay out of
 your way (shortcut details → the (i) tab).
@@ -78,7 +78,7 @@ Trigger: Action button → Focus → Light Phone, or a Control Center / Lock Scr
 ## 5. The lock (otherwise you just swipe to App Library)
 Settings → Screen Time:
 - **Downtime** → schedule it → **Block at Downtime** on
-- **Always Allowed** → exactly: Phone, WhatsApp, Spotify, Maps, Tesla, Wealthsimple, Yahoo Finance, Camera, Wallet
+- **Always Allowed** → exactly: Phone, WhatsApp, Spotify, Maps, Tesla, Wealthsimple, Yahoo Finance, Camera, Chrome
 - **Content & Privacy Restrictions → Allowed Apps → Safari: off**
 - Set a **Screen Time passcode different from your device passcode**. Write it on paper. Don't memorise it.
 
@@ -87,4 +87,5 @@ Per-app friction without Screen Time: long-press any app → **Hide and Require 
 ## 6. Finishing touches
 - Display & Brightness → **Raise to Wake: off**; Always-On Display off; StandBy off
 - Sounds & Haptics → silence everything except the ringtone
-- Camera and Wallet are already on the Lock Screen (swipe left / double-click side button)
+- Camera and Wallet are both on the Lock Screen already (swipe left / double-click side button),
+  so neither strictly needs a row

@@ -2,7 +2,10 @@
 // Add as a LARGE widget. Each row is its own tap target.
 
 // ── Look ──────────────────────────────────────────────────────────────
-const PAPER = "#d6d5d0";   // e-ink paper
+const PAPER = "#cac9c6";   // e-ink paper, ~5% below the wallpaper file's #d6d5d0:
+                           // iOS dims the Home Screen wallpaper but not the widget,
+                           // so matching values leave a visible card edge. Nudge this
+                           // if your device dims by a different amount.
 const INK   = "#141414";   // e-ink ink
 const SIZE  = 21;          // row text size
 
@@ -16,7 +19,7 @@ const MODE = "auto";
 //         the Shortcuts app on each launch.
 // false = use the native URL scheme where one is defined below (instant,
 //         no flash), falling back to Shortcuts where it's null.
-const FORCE_SHORTCUTS = true;
+const FORCE_SHORTCUTS = false;
 
 // [label, shortcut name, native scheme or null]
 const TOOLS = [
@@ -28,7 +31,7 @@ const TOOLS = [
   ["WEALTHSIMPLE",  "LP Wealthsimple",  null],
   ["YAHOO FINANCE", "LP Yahoo Finance", null],
   ["CAMERA",        "LP Camera",        null],
-  ["WALLET",        "LP Wallet",        "shoebox://"],
+  ["CHROME",        "LP Chrome",        "googlechrome://"],
 ];
 
 // ── Build ─────────────────────────────────────────────────────────────
