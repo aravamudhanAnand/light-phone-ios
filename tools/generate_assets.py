@@ -35,6 +35,9 @@ FONT_CANDIDATES: Sequence[tuple[str, Iterable[str]]] = (
     ("/System/Library/Fonts/Avenir Next.ttc", ("Medium", "Regular")),
     ("/System/Library/Fonts/HelveticaNeue.ttc", ("Regular",)),
     ("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", ("Book", "Regular")),
+    ("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", ("Regular",)),
+    ("C:/Windows/Fonts/segoeui.ttf", ("Regular",)),
+    ("C:/Windows/Fonts/arial.ttf", ("Regular",)),
 )
 
 TILE = 1024
