@@ -1,7 +1,10 @@
 # Light Phone mode for iPhone
 
-Turn an iPhone into something close to a [Light Phone II](https://www.thelightphone.com/):
-nine tools, an e-ink text list, no feed, no notifications.
+**Fewer distractions, more of what truly matters.**
+
+An iPhone reduced to nine words of e-ink type — no icons, no feed, nothing to scroll
+past. One press turns it on, one turns it back. Close to a
+[Light Phone II](https://www.thelightphone.com/), on hardware you already own.
 
 ![The same iPhone in normal mode and in Light Phone Focus](assets/screenshots/same-phone.png)
 
