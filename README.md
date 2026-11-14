@@ -1,10 +1,12 @@
 # Light Phone mode for iPhone
 
-**Fewer distractions, more of what truly matters.**
+The [Light Phone](https://www.thelightphone.com/) gets something right: a phone made to
+sit in your pocket rather than in your hand. This does the same thing to an iPhone you
+already own — no second device needed in order to own less.
 
-An iPhone reduced to nine words of e-ink type — no icons, no feed, nothing to scroll
-past. One press turns it on, one turns it back. Close to a
-[Light Phone II](https://www.thelightphone.com/), on hardware you already own.
+The home screen becomes a plain list of app names in large e-ink-style type. No icons,
+no colour, nothing moving. One press switches it on. The same press gives you your
+ordinary phone back.
 
 ![The same iPhone in normal mode and in Light Phone Focus](assets/screenshots/same-phone.png)
 
