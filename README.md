@@ -13,9 +13,10 @@ schemes:
 
 No jailbreak, no app to install besides [Scriptable](https://scriptable.app) (free).
 
-Built and verified on an **iPhone 16, iOS 26.6.2**. Widget tap handling and Focus
-behaviour both shift between iOS releases, so treat everything here as confirmed on that
-combination and worth re-checking on another.
+Built and verified on an **iPhone 16, iOS 26.6.2** — both routing paths tapped through
+end to end: a row with a native URL scheme, and a row falling back to Shortcuts. Widget
+tap handling and Focus behaviour both shift between iOS releases, so treat everything
+here as confirmed on that combination and worth re-checking on another.
 Everything here is a widget script, a set of generated images, and a configuration
 walkthrough.
 
