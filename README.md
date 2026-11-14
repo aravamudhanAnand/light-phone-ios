@@ -57,6 +57,7 @@ assets/previews/            the mockups above
 docs/SETUP.md               the full walkthrough: Focus, grayscale, Screen Time
 docs/URL-SCHEMES.md         how rows route, and how to find schemes for your apps
 docs/FIELD-NOTES.md         what building this on a real device turned up
+docs/BUILT-WITH-AI.md       the agent-assisted workflow, and where it went wrong
 assets/screenshots/         real captures from the phone this runs on
 ```
 
