@@ -3,6 +3,12 @@
 Turn an iPhone into something close to a [Light Phone II](https://www.thelightphone.com/):
 nine tools, an e-ink text list, no feed, no notifications.
 
+![The same iPhone in normal mode and in Light Phone Focus](assets/screenshots/same-phone.png)
+
+Both halves are real captures from my own phone, a minute apart. One widget on one Home
+Screen page, selected by a Focus. The generated preview below shows the two colour
+schemes:
+
 ![The home screen, light and inverted](assets/previews/light-vs-dark.png)
 
 No jailbreak, no app to install besides [Scriptable](https://scriptable.app) (free).
@@ -43,6 +49,7 @@ assets/previews/            the mockups above
 docs/SETUP.md               the full walkthrough: Focus, grayscale, Screen Time
 docs/URL-SCHEMES.md         how rows route, and how to find schemes for your apps
 docs/FIELD-NOTES.md         what building this on a real device turned up
+assets/screenshots/         real captures from the phone this runs on
 ```
 
 ---
